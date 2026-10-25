@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>codemap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#/scope/">codemap</a>
+  <nav id="crumbs" aria-label="Уровень"></nav>
+  <div class="search">
+    <input id="q" type="search" placeholder="Поиск символа  /" autocomplete="off" spellcheck="false">
+    <ul id="hits" hidden></ul>
+  </div>
+  <label class="toggle"><input id="tests" type="checkbox"> тесты</label>
+  <label class="toggle"><input id="generated" type="checkbox"> сгенерированное</label>
+</header>
+<main>
+  <div id="stage"></div>
+  <aside id="panel"><p class="hint">Наведите на узел, чтобы увидеть подробности. Клик — провалиться глубже.</p></aside>
+</main>
+<footer id="legend">
+  <span><i class="l call"></i>вызов</span>
+  <span><i class="l iface"></i>⇢ через интерфейс</span>
+  <span><i class="l async"></i>⇝ канал / шина / колбэк</span>
+  <span id="status"></span>
+</footer>
+<script src="vendor/cytoscape.min.js"></script>
+<script src="vendor/dagre.min.js"></script>
+<script src="vendor/cytoscape-dagre.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
