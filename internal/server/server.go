@@ -41,7 +41,7 @@ func (s *Server) Run(ctx context.Context) error {
 }
 
 func (s *Server) mcpServer() *mcp.Server {
-	srv := mcp.NewServer(&mcp.Implementation{Name: "codemap", Version: "v0.1.0-beta"},
+	srv := mcp.NewServer(&mcp.Implementation{Name: "codemap", Version: "v0.1.1-beta"},
 		&mcp.ServerOptions{Instructions: instructions})
 
 	mcp.AddTool(srv, &mcp.Tool{

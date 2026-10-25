@@ -1,6 +1,6 @@
 # codemap
 
-> **Status: beta (v0.1.0-beta).** It works on real codebases, but output formats, flags and MCP tool
+> **Status: beta (v0.1.1-beta).** It works on real codebases, but output formats, flags and MCP tool
 > names may still change. See [Known issues](#known-issues) and [Benchmarks](#benchmarks--when-it-helps)
 > before you rely on it.
 
@@ -26,7 +26,7 @@ Test files are indexed, so fakes and mocks show up in `impls` and `callers`.
 
 ## Install
 
-Requires Go 1.27+.
+Requires Go 1.26+.
 
 ```sh
 go install github.com/datfcknadam/codemap@latest
